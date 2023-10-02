@@ -1,19 +1,13 @@
-import PropTypes from 'prop-types'
 import React from 'react'
-import { connect } from 'react-redux'
+// import styles from './Home.module.css'
+import "./Home.module.css"
+import "./Home.css"
 
-export const Home = (props) => {
+function Home() {
   return (
-    <div>Home</div>
+    // <div className={styles.teste}>Home</div>
+    <div className='teste'>Home</div>
   )
 }
 
-Home.propTypes = {
-  second: PropTypes.third
-}
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default Home
